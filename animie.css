@@ -1,38 +1,64 @@
-.block1{
-    width: 250px;
-    height: 250px;
-    background-color: red;
-    font-size:125px;
-    text-align: center;
-    line-height: 250px;
+.block1 {
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  font-size: 125px;
+  text-align: center;
+  line-height: 250px;
 
-    /* animation: myslide;
+  /* animation: myslide;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-delay: 1s; */
-    animation:  3s linear 0s infinite running ;
-
-
+  animation: 3s linear 0s infinite running myscale;
 }
 
-
-
-
-
-@keyframes myslide{
-    from{margin-left:100%;}
-    to{margin-left: 0%;}
+@keyframes myslide {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
 
 @keyframes myrotate {
-    /* 100%{transform: rotatex(360deg)} */
-    /* 100%{transform: rotatey(300deg)} */
-    100%{transform: rotatez(360deg)}
-
-
+  /* 100%{transform: rotatex(360deg)} */
+  /* 100%{transform: rotatey(300deg)} */
+  100% {
+    transform: rotatez(360deg);
+  }
 }
 
 @keyframes opacity {
-    50%{opacity: 0;}
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes myscale {
+  50% {
+    transform: scale(0.5);
+  }
+}
+
+body{
+    background-color: #333;
+}
+.box{
+background: white;
+width: 200px;
+height: 200px;
+position: relative;
+animation-name: myanimation;
+animation-duration: 4s;
+} 
+
+@keyframes myanimation {
+    0%{background-color: white; left: 0px; top: 0px;}
+    25%{background-color: red;left: 300px; top: 0px;}
+    50%{background-color: rgb(46, 11, 243); left: 300px; top: 300px;}
+    75%{background-color: red; left: 0px; top: 300px;}
+    100%{background-color: rgb(247, 242, 242); top: 0px; left: 0px;}
 }
