@@ -5,11 +5,34 @@
     font-size:125px;
     text-align: center;
     line-height: 250px;
-    animation: myslide;
+
+    /* animation: myslide;
     animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s; */
+    animation:  3s linear 0s infinite running ;
+
+
 }
+
+
+
+
 
 @keyframes myslide{
     from{margin-left:100%;}
-    to{margin-left: 100%;}
+    to{margin-left: 0%;}
+}
+
+@keyframes myrotate {
+    /* 100%{transform: rotatex(360deg)} */
+    /* 100%{transform: rotatey(300deg)} */
+    100%{transform: rotatez(360deg)}
+
+
+}
+
+@keyframes opacity {
+    50%{opacity: 0;}
 }
