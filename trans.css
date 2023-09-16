@@ -10,7 +10,7 @@ body{
     margin: auto;
     margin-top: 200px;
     transition-property: background,border-radius,transform;
-    transition-duration: 3s;
+    transition-duration: 2s;
     transition-timing-function: ease-in-out;
 }
 .box:hover{
